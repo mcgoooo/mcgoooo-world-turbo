@@ -19,7 +19,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./app/*"]
+      "@/*": ["./app/*"],
+      "@/requests": ["./app/requests*"],
+      "@/components": ["./app/components*"],
+      "@/types": ["./app/types*"]
     },
     "types": [
         "./cloudflare-env.d.ts",
