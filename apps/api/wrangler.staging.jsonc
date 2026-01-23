@@ -1,13 +1,15 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mcgoooo-world-spotify-staging",
+  "name": "api",
   "main": "src/index.ts",
   "compatibility_date": "2025-08-08",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "routes": [
     {
-      "pattern": "staging.mcgoooo.world/api/*",
-      "zone_id": "892dc314a0debe0796a0786f92aa4348"
+      "pattern": "staging.example.com/api/*",
+      "zone_id": "example-zone-id"
     }
   ]
 }

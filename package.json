@@ -9,12 +9,18 @@
     "deploy:staging": "turbo run deploy:staging --output-logs=full",
     "lint": "turbo run lint",
     "check-types": "turbo run check-types",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "dev-ops:initial-setup": "node dev-ops/setup/initialSetup.mjs"
   },
   "devDependencies": {
+    "chalk": "^5.6.0",
+    "commander": "^14.0.0",
+    "inquirer": "^12.9.3",
     "prettier": "^3.6.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "turbo": "^2.5.6"
+    "turbo": "^2.5.6",
+    "jsonc-parser": "^3.3.1"
+
   },
   "engines": {
     "node": ">=18"
@@ -23,5 +29,4 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
-}
+  ]}

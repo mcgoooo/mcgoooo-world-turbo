@@ -1,9 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "mcgoooo-world-spotify",
+  "name": "api",
   "main": "src/index.ts",
   "compatibility_date": "2025-08-08",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "routes": [
     {
       "pattern": "mcgoooo.world/api/*",
